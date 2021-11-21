@@ -35,7 +35,6 @@ func loadExample2() {
 }
 
 func GetInstance2() *example2 {
-	mu.Lock()
 	sn=""
 	loadIconsOnce.Do(loadExample2)
 	return instance2
